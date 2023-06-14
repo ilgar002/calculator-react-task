@@ -1,0 +1,23 @@
+@import "../../../style/variables.scss";
+.keyboard-btn {
+  padding: 16px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.5em;
+  cursor: pointer;
+  &.value {
+    background-color: $value-btn-bg;
+    color: black;
+  }
+  &.operator {
+    background-color: $operator-btn-bg;
+    color: #fff;
+  }
+  &.clear {
+    background-color: $clear-btn-bg;
+    color: #fff;
+  }
+}

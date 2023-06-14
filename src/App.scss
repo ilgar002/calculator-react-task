@@ -1,6 +1,11 @@
 @import "./style/variables.scss";
 .container {
-  max-width: 600px;
+  max-width: 550px;
   margin: 0 auto;
+}
+#app {
   background-color: $calculator-bg;
+  border-radius: 12px;
+  font-size: 1rem;
+  padding: 16px;
 }
