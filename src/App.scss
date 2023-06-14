@@ -1,0 +1,6 @@
+@import "./style/variables.scss";
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: $calculator-bg;
+}
