@@ -1,7 +1,7 @@
 @import "../../../style/variables.scss";
 .keyboard-btn {
-  padding: 16px;
-  border-radius: 4px;
+  padding: 20px 0;
+  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,6 +15,9 @@
   &.operator {
     background-color: $operator-btn-bg;
     color: #fff;
+    path {
+      stroke: #fff;
+    }
   }
   &.clear {
     background-color: $clear-btn-bg;

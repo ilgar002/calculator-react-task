@@ -2,14 +2,9 @@ import React from "react";
 import "./App.scss";
 import Result from "./components/Result/Result";
 import Keyboard from "./components/Keyboard/Keyboard";
-const initOperation = {
-  firstValue: "",
-  process: "",
-  secondValue: "",
-};
+import { initOperation } from "./data/data";
 const App = () => {
   const [operation, setOperation] = React.useState(initOperation);
-
   return (
     <div className="container">
       <div id="app">
