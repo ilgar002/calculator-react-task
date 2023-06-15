@@ -9,3 +9,12 @@
   font-size: 1rem;
   padding: 16px;
 }
+@media (max-width: 590px) {
+  #app {
+    font-size: 0.9rem;
+    padding: 16px 12px;
+  }
+  .container {
+    width: 90%;
+  }
+}

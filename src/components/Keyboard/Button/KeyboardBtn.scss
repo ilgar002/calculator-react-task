@@ -6,8 +6,9 @@
   align-items: center;
   justify-content: center;
   font-weight: 600;
-  font-size: 1.5em;
+  font-size: 1.7em;
   cursor: pointer;
+  transition: 0.1s all ease;
   &.value {
     background-color: $value-btn-bg;
     color: black;
@@ -18,9 +19,15 @@
     path {
       stroke: #fff;
     }
+    &.active {
+      filter: brightness(0.6);
+    }
   }
   &.clear {
     background-color: $clear-btn-bg;
     color: #fff;
+  }
+  &:hover {
+    filter: brightness(0.6);
   }
 }

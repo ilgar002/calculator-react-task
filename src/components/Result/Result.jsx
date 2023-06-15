@@ -1,14 +1,14 @@
 import React from "react";
 import "./Result.scss";
 const Result = ({ operation }) => {
+  const preview = operation.secondValue
+    ? operation.secondValue
+    : operation.firstValue;
+  const alert = String(preview).length > 17 ? "active" : "";
   return (
     <div className="result-group">
-      <span id="result">
-        {operation.secondValue ? operation.secondValue : operation.firstValue}
-      </span>
-      <small className="alert">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-      </small>
+      <span id="result">{preview}</span>
+      <small className={`alert ${alert}`}>exceeded the process limit</small>
     </div>
   );
 };

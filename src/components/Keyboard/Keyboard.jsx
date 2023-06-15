@@ -77,6 +77,7 @@ const Keyboard = ({ operation, setOperation }) => {
             key={obj.id}
             mission={obj.mission}
             icon={<obj.icon />}
+            active={operation.process == obj.value}
             clickHandler={() => clickHandlerOperators(obj.value)}
           />
         ))}
