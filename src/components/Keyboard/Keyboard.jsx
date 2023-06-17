@@ -7,9 +7,21 @@ const Keyboard = ({ operation, setOperation }) => {
   const clickHandlerNumber = (value) => {
     setOperation((prev) => {
       if (prev.process) {
-        return { ...prev, secondValue: Number(prev.secondValue + value) };
+        return {
+          ...prev,
+          secondValue:
+            String(prev.secondValue).length <= 12
+              ? Number(prev.secondValue + value)
+              : prev.secondValue,
+        };
       } else {
-        return { ...prev, firstValue: Number(prev.firstValue + value) };
+        return {
+          ...prev,
+          firstValue:
+            String(prev.firstValue).length <= 12
+              ? Number(prev.firstValue + value)
+              : prev.firstValue,
+        };
       }
     });
   };

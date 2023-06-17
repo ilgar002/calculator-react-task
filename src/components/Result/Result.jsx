@@ -4,7 +4,7 @@ const Result = ({ operation }) => {
   const preview = operation.secondValue
     ? operation.secondValue
     : operation.firstValue;
-  const alert = String(preview).length > 17 ? "active" : "";
+  const alert = String(preview).length > 12 ? "active" : "";
   return (
     <div className="result-group">
       <span id="result">{preview}</span>
